@@ -2,5 +2,6 @@ granny smith
 green apples
 fuji apples
 McIntosh
-Gala 
-Honeycrisp 
+Gala
+Honeycrisp
+Golden
