@@ -3,7 +3,7 @@
 # Git Collaboration
 **GOAL**: In this project, you and your partner will be creating a list of apples in a text document, all version-controlled with Git!  While this project has an apples-listing theme, the apples (and the project) is not the point: The real goal is to give us an introduction to how we’ll be collaborating via Git in the coming lessons.
 
-Collaborators: _________________
+Collaborators: ______Rubin Tollinchi___________
 
 ## Part 1: First Edits and `git status`
 1. Open the project in VS Code.  From within your project directory, type code ., and that should open your project in VS Code.
@@ -12,14 +12,14 @@ Collaborators: _________________
 4. In your terminal type `git status`:
     - If it is not already, `git status` should become one of your favorite and most used git commands. It gives you a lot of information, including which branch you are on (more about branches soon), and information about the state of files that have been modified since the last commit.
 
-5. You should see both your `README.md` and `apples.txt` files listed in red. This means they have not yet been staged to be included in the next commit. 
+5. You should see both your `README.md` and `apples.txt` files listed in red. This means they have not yet been staged to be included in the next commit.
 6. You should notice that they are listed in different sections. README.md is in a category called "Changes not staged for commit" while apples.txt is under "Untracked files". What’s the difference between “unstaged” and “untracked” files?
 
 ## Part 2: `git add`
 1. Add these files to the staging area! We do this using the `git add` command. Go ahead and type `git add` in the terminal.
 2. Oops! Looks like you got an error message. We have to specify which files you want to add to the staging area. There are a couple of ways to do so:
     - If you want to add only some of the modified files to the staging area, you can use the pathname of the file. This might look like `git add README.md apples.txt`
-    - If you want to stage every file with changes, including untracked files, you can use `git add -A` (or the longer equivalent `git add --all`) 
+    - If you want to stage every file with changes, including untracked files, you can use `git add -A` (or the longer equivalent `git add --all`)
     - A popular shortcut to stage all of your changes is `git add .`
 3. Using any of the above methods, add `README.md` and `apples.txt` to the staging area.
 4. Type `git status` you should see both files listed in green under "Changes to be committed."
@@ -30,7 +30,7 @@ Collaborators: _________________
 3. Partner A should execute the following commands to commit all of the changes you have made so far.
 ```bash
 git add .
-git commit -m "A message describing changes since the last commit" 
+git commit -m "A message describing changes since the last commit"
 ```
 
 4. If you type `git status`, you should see a message saying there are no changes to commit and that your branch is 1 commit ahead of 'origin/main'.
@@ -48,7 +48,7 @@ git push origin main
 1. **Partner B**: Refresh your GitHub page. Do you see Partner A’s commits? What!?! No changes. No new commits.
 2. **Partner B**: To access Partner A’s work, Partner B should pull from Partner A's remote repository. Use the name you assigned to Partner A's repo when you added it as a remote. Again, we specify that we want to pull from the main branch.
 ```bash
-git pull partner main 
+git pull partner main
 // Replace "partner" with the name of your partner's branch
 ```
 3. Type `git pull` command fetches any changes from the remote and merges them into the local branch.
